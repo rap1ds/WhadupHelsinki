@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# COFFEE_PATH="./lib/coffee-script/bin"
+# JSL_PATH="./lib/jsl"
+
+# export PATH=${COFFEE_PATH}:${JSL_PATH}:${PATH}
+
+SERVER_SRC_FILES="src/server/coffee/*.coffee"
+SERVER_OUT_DIR="src/server/js/"
+CLIENT_SRC_FILES="src/client/coffee/"
+CLIENT_OUT_DIR="src/client/public/js/"
+
+SERVER_SPEC_FILES="src-test/server/coffee/*.coffee"
+SERVER_SPEC_DIR="src-test/server/js/"
+CLIENT_SPEC_FILES="src-test/client/coffee/"
+CLIENT_SPEC_DIR="src-test/client/js/"
+
+coffee --lint -b --watch --output ${SERVER_OUT_DIR} --compile ${SERVER_SRC_FILES} &
+coffee --lint --watch --output ${CLIENT_OUT_DIR} --compile ${CLIENT_SRC_FILES} &
+
+coffee --lint --watch --output ${SERVER_SPEC_DIR} --compile ${SERVER_SPEC_FILES} &
+coffee --lint --watch --output ${CLIENT_SPEC_DIR} --compile ${CLIENT_SPEC_FILES}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WhadupHelsinki</title>
+		<script type="text/javascript" src="lib/json2.js"></script>
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="lib/underscore.js"></script>
+		<script type="text/javascript" src="lib/backbone.js"></script>
+		<script type="text/javascript" src="js/whadup.js"></script>
+	</head>
+	<body>
+		<p>Whadup!</p>
+	</body>
+</html>

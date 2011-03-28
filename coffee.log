@@ -1,0 +1,11 @@
+15:01:09 GMT+0300 (EEST) - compiled ./src/server/coffee/server.coffee
+15:01:22 GMT+0300 (EEST) - compiled ./src/server/coffee/server.coffee
+15:07:21 GMT+0300 (EEST) - compiled ./src/client/coffee/whadup.coffee
+In ./src-test/client/coffee/MathSpec.coffee, Parse error on line 1: Unexpected '->'
+15:07:21 GMT+0300 (EEST) - compiled ./src/server/coffee/server.coffee
+15:07:52 GMT+0300 (EEST) - compiled ./src/server/coffee/server.coffee
+In ./src-test/client/coffee/MathSpec.coffee, Parse error on line 1: Unexpected '->'
+15:07:52 GMT+0300 (EEST) - compiled ./src/client/coffee/whadup.coffee
+15:08:13 GMT+0300 (EEST) - compiled ./src/server/coffee/server.coffee
+15:08:16 GMT+0300 (EEST) - compiled ./src/server/coffee/server.coffee
+In ./src-test/client/coffee/MathSpec.coffee, Parse error on line 1: Unexpected '->'
