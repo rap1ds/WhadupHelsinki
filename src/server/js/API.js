@@ -1,22 +1,19 @@
 var API;
-API = (function() {
-  function API() {
-    this.get = {
-      "/api": function(req, res) {
-        return res.send("Hello from API!");
-      },
-      "/api/events": function(req, res) {
-        return res.send([
-          {
-            title: "Foo Fighters"
-          }, {
-            title: "Maalaismarkkinat"
-          }
-        ]);
-      }
-    };
-    this.post = {};
+API = {
+  events: [],
+  get: {
+    "/api": function(req, res) {
+      return res.send("Hello from API!");
+    },
+    "/api/events": function(req, res) {
+      return res.send(API.events);
+    }
+  },
+  post: {
+    "/api/events": function(req, res) {
+      API.events.push(req.body);
+      return res.send(201);
+    }
   }
-  return API;
-})();
+};
 module.exports = API;
