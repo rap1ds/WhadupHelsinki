@@ -18,7 +18,7 @@
       {
         title: "Foo Fighters @ Kalasamata"
       }, {
-        title: "Maalaisn�yttelyt @ Messukeskus"
+        title: "Maalaisn���yttelyt @ Messukeskus"
       }
     ]);
     window.EventView = Backbone.View.extend({

@@ -12,10 +12,8 @@ $ ->
 		url: '/api/events/'
 	}
 	
-	window.Events = new EventList [
-		{title: "Foo Fighters @ Kalasamata"}
-		{title: "Maalaisnäyttelyt @ Messukeskus"}
-	]
+	window.Events = new EventList([{title: "Foo Fighters @ Kalasamata"}, {title: "Maalaisnï¿œyttelyt @ Messukeskus"}]);
+
 	
 	window.EventView = Backbone.View.extend {
 		tagName: "li"

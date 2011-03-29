@@ -5,11 +5,10 @@ app = express.createServer();
 API = require('./API');
 app.configure(function() {
   app.use(express.static(__dirname + '/../../client/public'));
-  app.use(express.errorHandler({
+  return app.use(express.errorHandler({
     dumpExceptions: true,
     showStack: true
   }));
-  return app.use(express.bodyParser());
 });
 _ref = API.get;
 for (route in _ref) {

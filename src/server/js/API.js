@@ -1,11 +1,17 @@
 var API;
 API = {
-  events: [],
+  events: [
+    {
+      title: "Sample event"
+    }
+  ],
   get: {
     "/api": function(req, res) {
+      console.log("GET /api");
       return res.send("Hello from API!");
     },
     "/api/events": function(req, res) {
+      console.log("GET /api/events");
       return res.send(API.events);
     }
   },
