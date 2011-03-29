@@ -5,8 +5,14 @@ API = (function() {
       "/api": function(req, res) {
         return res.send("Hello from API!");
       },
-      "/events": function(req, res) {
-        return res.send("Events");
+      "/api/events": function(req, res) {
+        return res.send([
+          {
+            title: "Foo Fighters"
+          }, {
+            title: "Maalaismarkkinat"
+          }
+        ]);
       }
     };
     this.post = {};

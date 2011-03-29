@@ -4,8 +4,8 @@ class API
 			"/api" : (req, res) ->
 				res.send "Hello from API!"
 				
-			"/events" : (req, res) ->
-				res.send "Events"
+			"/api/events" : (req, res) ->
+				res.send [{title: "Foo Fighters"}, {title: "Maalaismarkkinat"}]
 		}
 		
 		@post = {
